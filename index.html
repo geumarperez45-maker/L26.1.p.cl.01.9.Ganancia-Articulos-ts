@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ganancia Artículos - MVC</title>
+</head>
+<body>
+<div id="main_container">
+    <div id="vTienda">
+    <button id="vTienda_btAgregar">Agregar Artículo</button>
+    <p>Ganancia Total: $<span id="vTienda_lblGananciaTotal">0</span></p>
+    <p>Código del artículo más caro: <span id="vTienda_lblCodigoMayor">---</span></p>
+    </div>
+
+    <section id="vArticulo" hidden>
+        <h3>Datos del Artículo</h3>
+        <input type="number" id="vArticulo_inCodigo" placeholder="Código">
+        <input type="number" id="vArticulo_inCosto" placeholder="Costo">
+        <input type="number" id="vArticulo_inPrecioVenta" placeholder="Precio Venta">
+        <button id="vArticulo_btAceptar">Aceptar</button>
+    </section>
+</div>
+
+<script type="module">
+    import Cl_mTienda from "./dist/models/Cl_mTienda.js";
+    import Cl_vTienda from "./dist/views/Cl_vTienda.js";
+    import Cl_cTienda from "./dist/controllers/Cl_cTienda.js";
+
+    // Se instancia el MVC completo
+    const modelo = new Cl_mTienda();
+    const vista = new Cl_vTienda();
+    const controlador = new Cl_cTienda(modelo, vista);
+</script>
+</body>
+</html>
