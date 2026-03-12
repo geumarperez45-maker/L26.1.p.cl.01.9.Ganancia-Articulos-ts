@@ -1,4 +1,8 @@
 export default class Cl_vArticulo {
+    inCodigo;
+    inCosto;
+    inPrecioVenta;
+    btAceptar;
     constructor() {
         this.inCodigo = document.getElementById("vArticulo_inCodigo");
         this.inCosto = document.getElementById("vArticulo_inCosto");
@@ -12,3 +16,4 @@ export default class Cl_vArticulo {
         this.btAceptar.onclick = callback;
     }
 }
+//# sourceMappingURL=Cl_vArticulo.js.map

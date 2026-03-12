@@ -1,4 +1,7 @@
 export default class Cl_mTienda {
+    acGanancia;
+    mayorPrecioVenta;
+    codigoMayor;
     constructor() {
         this.acGanancia = 0.0;
         this.mayorPrecioVenta = 0.0;
@@ -20,3 +23,4 @@ export default class Cl_mTienda {
         return this.codigoMayor;
     }
 }
+//# sourceMappingURL=Cl_mTienda.js.map

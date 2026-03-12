@@ -1,4 +1,7 @@
 export default class Cl_mArticulo {
+    _codigo;
+    _costo;
+    _precioVenta;
     constructor(codigo, costo, precioVenta) {
         this._codigo = codigo;
         this._costo = costo;
@@ -11,3 +14,4 @@ export default class Cl_mArticulo {
     set precioVenta(pV) { this._precioVenta = +pV; }
     get precioVenta() { return this._precioVenta; }
 }
+//# sourceMappingURL=Cl_mArticulo.js.map

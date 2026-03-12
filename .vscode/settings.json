@@ -1,0 +1,23 @@
+{
+    /* Apariencia y Orden */
+    "editor.formatOnSave": true,           /* Acomoda el código automáticamente al guardar */
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit" /* Corrige errores menores automáticamente */
+    },
+
+    /* Configuración de TypeScript */
+    "typescript.tsdk": "node_modules/typescript/lib", 
+    "typescript.suggestionActions.enabled": true,
+
+    /* Ocultar archivos para no confundirte */
+    "files.exclude": {
+        "**/*.js.map": true,               /* Oculta mapas de compilación */
+        "dist/**/*.js": false              /* Muestra los JS en dist por si quieres verificar algo */
+    },
+
+    /* Otras mejoras */
+    "editor.tabSize": 2,                   /* Usa 2 espacios para que el código no se vea muy ancho */
+    "editor.fontSize": 14,                 /* Tamaño de letra cómodo para programar */
+    "files.autoSave": "afterDelay",        /* Guarda solo después de un segundo de inactividad */
+    "files.autoSaveDelay": 1000
+}

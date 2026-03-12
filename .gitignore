@@ -1,0 +1,18 @@
+# Dependencias
+node_modules/
+
+# Archivos generados (Compilación)
+# Los archivos JS se generan desde los TS, así que no hace falta rastrearlos
+dist/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs de error
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuración personal de VS Code (Opcional)
+# .vscode/

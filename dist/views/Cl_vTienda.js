@@ -1,4 +1,8 @@
 export default class Cl_vTienda {
+    btAgregar;
+    lblGananciaTotal;
+    lblCodigoMayor;
+    seccionArticulo;
     constructor() {
         this.btAgregar = document.getElementById("vTienda_btAgregar");
         this.lblGananciaTotal = document.getElementById("vTienda_lblGananciaTotal");
@@ -17,3 +21,4 @@ export default class Cl_vTienda {
         this.seccionArticulo.hidden = true;
     }
 }
+//# sourceMappingURL=Cl_vTienda.js.map
