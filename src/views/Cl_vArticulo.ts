@@ -11,11 +11,19 @@ constructor() {
     this.btAceptar = document.getElementById("vArticulo_btAceptar") as HTMLButtonElement;
 }
 
-get codigo(): number { return +this.inCodigo.value; }
-get costo(): number { return +this.inCosto.value; }
-get precioVenta(): number { return +this.inPrecioVenta.value; }
+get codigo(): number { 
+    return +this.inCodigo.value; }
+get costo(): number { 
+    return +this.inCosto.value; }
+get precioVenta(): number { 
+    return +this.inPrecioVenta.value; }
 
 set onClickAceptar(callback: () => void) {
     this.btAceptar.onclick = callback;
 }
+reportar(inCodigo: number, inCosto: number, inPrecioVenta: number) {
+    this.inCodigo.innerHTML = inCodigo.toFixed(2);
+    this.inCosto.innerHTML = inCosto.toString();
+    this.inPrecioVenta.innerHTML = inPrecioVenta.toFixed()}
+
 }
